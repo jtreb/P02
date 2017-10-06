@@ -514,7 +514,18 @@ p.colItemName {
 	margin: auto;
 	display: block;
 	width: 98%;
+
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.5s;
+	animation-name: zoom;
+	animation-duration: 0.5s;
 }
 
+.closePopUp {
+	position: absolute;
+	color: #ffffff;
+	font-size: 30em;
+	font-weight: bold;
+}
 
 /* End of the stylesheet styling*/
