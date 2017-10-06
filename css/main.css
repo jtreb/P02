@@ -1,0 +1,8 @@
+/*Styling of the stylesheet*/
+
+/*clear floats for style of grids*/
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/* End of the stylesheet styling*/
