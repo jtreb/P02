@@ -172,4 +172,97 @@ cite {
 }
 /*end of citations links styling*/
 
+
+
+
+/*
+  Interactive Elements Section ------------------------
+*/
+
+/*styling for the in-text link*/
+.inTextLink {
+  text-decoration: none;
+  color: #6495ED;
+  display: inline-block;
+}
+
+.inTextLink:hover, .inTextLink:focus {
+  text-decoration: underline;
+  color: #08B;
+  transition: color 0.5s ease-out;
+}
+
+/*styling of default button*/
+.button, button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75em 3em;
+  background-color: #f2f2f2;
+  color: #484848;
+  border-radius: 0.5em;
+}
+
+/*styling for the navigation buttons*/
+.navButton {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75em 3em;
+  background-color: white;
+  color: #484848;
+  border-radius: 0.5em;
+  transition: background-color 0.5s ease-out;
+}
+
+.navButton:active,.navButton:hover, .navButton:focus {
+  background-color: #99CCCC;
+}
+
+/*styling for the submit and reset buttons*/
+.submitButton, .resetButton {
+  border: 1px solid #99CCCC;
+  background-color: #99CCCC;
+  color: white;
+}
+
+.submitButton:hover, .submitButton:focus {
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+}
+
+.resetButton {
+  background-color: white;
+  color: #484848;
+}
+
+.resetButton:hover, .resetButton:focus {
+  background-color: #99CCCC;
+  color: white;
+}
+/*end of submit and reset buttons styling*/
+
+/*styling for text input field and a label*/
+form[method=login] {
+    font-family: "fredoka";
+    font-size: 2em;
+    color: #99CCCC;
+}
+
+input[type=text],  input[type=password]{
+  display: block;
+  width: 20em;
+  padding: 12px 20px;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=text]:active, input[type=text]:hover, input[type=text]:focus, input[type=password]:active, input[type=password]:hover, input[type=password]:focus {
+  color: #666;
+  border: 1px solid #99CCCC;
+}
+/*end of text input field and a label styling*/
+/*
+  end of Interactive Elements Section -----------------------
+*/
+
 /* End of the stylesheet styling*/
