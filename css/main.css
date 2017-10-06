@@ -324,6 +324,82 @@ ol.numberedList {
 }
 /*end of main navigation styling*/
 
+
+/*styling for product listing*/
+.productBox, .productButtonsBox {
+  margin: 0;
+  display: -ms-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-justify-content: space-around;
+  justify-content:space-around;
+}
+
+.productItem {
+  display: inline-block;
+  max-width: 24%;
+  padding: 1em 1em;
+  margin: 0.1em;
+  color: #ffffff;
+  background-color: #112035;
+  border-radius: 0.75em;
+  border: 3px solid #112035;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
+.productItem:hover, .productItem:focus {
+  border: 3px solid #f79c7b;
+}
+
+.productName {
+  margin: 0 0 0.7em 0;
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.productDetail {
+  display: inline-block;
+  color: #CCC;
+}
+
+.productDetail a {
+  color: #99CCCC;
+}
+/*
+.productButtonsBox {
+  margin: 0.25em 0;
+}*/
+
+a.productButton {
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.35em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #49c8e5;
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+a.productButton:hover, a.productButton:focus {
+  background-color: #f79c7b;
+}
+/*end of product listing styling*/
+
+
 /*styling for color swatches*/
 .colorSwatchBox {
   margin: 0;
