@@ -26,7 +26,7 @@
 
       <!-- style guide contents -->
       <div class="pageContent">
-        <!-- style guide topic -->
+        <!-- all style guide topic -->
         <div class="contentTopic">
           <h1>P01: Style Guide</h1>
 
@@ -102,7 +102,98 @@
           </section>
           <!-- code Syntax Section end here -->
         </div>
-        <!-- style guide topic end here -->
+
+        <div class="contentTopic">
+          <!-- Interactive Elements Section -->
+          <section id="#interactiveElements">
+            <h2>Interactive Elements</h2>
+
+            <!-- An in-text link section -->
+            <section>
+              <h3>In-text Link</h3>
+
+              <h4>CSS Selector:</h4>
+              <p>.inTextLink</p>
+
+              <h4>Sample Code:</h4>
+              <code>&lt;a href="#" class="in_text"&gt;in-text Link&lt;/a&gt;</code>
+
+              <h4>Rendered Element:</h4>
+              <p>I am an <a href="#" class="inTextLink">in-text Link</a>.</p>
+            </section>
+            <!-- An in-text link section end here -->
+
+
+            <!-- The navigation button style section -->
+            <section>
+              <h3>Navigation Button</h3>
+
+              <h4>CSS Selector:</h4>
+              <p>.navButton</p>
+
+              <h4>Sample Code:</h4>
+              <code>&lt;a href="#" class="navButton"&gt;Navigation Button&lt;/a&gt;</code>
+
+              <h4>Rendered Element:</h4>
+              <a href="#" class="button navButton">Navigation Button</a>
+            </section>
+            <!-- The navigation button style section end here -->
+
+
+            <!-- A submit and reset button for forms section -->
+            <section>
+              <h3>Submit and Reset Buttons</h3>
+
+              <h4>CSS Selector:</h4>
+              <p>.submitButton / .resetButton</p>
+
+              <h4>Sample Code:</h4>
+              <code>
+                &lt;button type="submit" name="submit" class="submitButton"&gt;Submit Button&lt;/button&gt; <br>
+                &lt;button type="reset" name="reset" class="resetButton"&gt;Reset Button&lt;/button&gt;
+              </code>
+
+              <h4>Rendered Element:</h4>
+              <button type="submit" name="submit" class="submitButton">Submit Button</button>
+              <button type="reset" name="reset" class="resetButton">Reset Button</button>
+            </section>
+            <!-- A submit and reset button for forms section end here -->
+
+
+            <!-- A text input field and a label section -->
+            <section>
+              <h3>Text Input Field and Label</h3>
+
+              <h4>CSS Selector:</h4>
+              <p>form[method=login]</p>
+              <p>input[type=text]</p>
+              <p>input[type=password]</p>
+
+              <h4>Sample Code:</h4>
+              <code>
+                &lt;form method="login" action="#login"&gt; <br>
+                &nbsp; &nbsp; &lt;label for="formUsername"&gt;Username:&lt;/label&gt; <br>
+                &nbsp; &nbsp; &lt;input type="text" id="formUsername" placeholder="Username"&gt; <br>
+                <br>
+                &nbsp; &nbsp; &lt;label for="formPassword"&gt;Password:&lt;/label&gt; <br>
+                &nbsp; &nbsp; &lt;input type="password" id="formPassword" placeholder="Password"&gt; <br>
+                &lt;/form&gt;
+              </code>
+
+              <h4>Rendered Element:</h4>
+              <form method="login" action="#login">
+                <label for="formUsername">Username:</label>
+                <input type="text" id="formUsername" placeholder="Username">
+
+                <label for="formPassword">Password:</label>
+                <input type="password" id="formPassword" placeholder="Password">
+              </form>
+            </section>
+            <!-- A text input field and a label section end here -->
+          </section>
+          <!-- Interactive Elements Section end here-->
+        </div>
+        <!-- all style guide topic end here -->
       </div>
       <!-- style guide contents end here -->
     </div>
