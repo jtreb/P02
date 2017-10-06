@@ -377,10 +377,6 @@ img {
 .productDetail a {
   color: #99CCCC;
 }
-/*
-.productButtonsBox {
-  margin: 0.25em 0;
-}*/
 
 a.productButton {
   flex: 1;
@@ -398,6 +394,33 @@ a.productButton:hover, a.productButton:focus {
   background-color: #f79c7b;
 }
 /*end of product listing styling*/
+
+
+/*styling for the website grid structure*/
+.colGrid {
+  margin: 0;
+  display: -ms-flex;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.colItem {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+
+  background-color: #C0DFD9;
+  padding: 1em;
+}
+
+p.colItemName {
+  margin: 0;
+  padding: 2em;
+  background-color: #99CCCC;
+  text-align: center;
+}
+/*end of website grid structure styling*/
 
 
 /*styling for color swatches*/
