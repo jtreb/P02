@@ -336,10 +336,13 @@ ol.numberedList {
 }
 
 .colorSwatchItem {
+  flex: 1;
   list-style: none;
   padding: 1.5em 2em;
   border-radius: 1em;
   color: white;
+  text-align: center;
+  margin: 0.25em;
 }
 
 .cw1{
@@ -364,14 +367,17 @@ ol.numberedList {
 
 .cw6{
   background-color: #333333;
+  order: 1;
 }
 
 .cw7{
   background-color: #4385b7;
+  order:-1;
 }
 
 .cw8{
   background-color: #225c89;
+  order:-2;
 }
 
 .cw9{
