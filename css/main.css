@@ -490,6 +490,11 @@ p.colItemName {
   end of Combined Elements Section -----------------------
 */
 
+/*
+start of pop up design setup
+*/
+
+/*specific styling for the sitemap image, which will trigger the popup*/
 #imgSiteMapTrigger {
 	border-radius: 0.5em;
 	cursor: pointer;
@@ -500,11 +505,16 @@ p.colItemName {
 	opacity: 0.7;
 }
 
+/*designing the popup environment*/
 .popUpClass {
 	display: none;
 	position: fixed;
+
+	/*puts the popup image infront of everything*/
 	z-index: 1;
 	padding-top: 2em;
+
+	/*coordinates*/
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -513,12 +523,14 @@ p.colItemName {
 	background-color: #000000;
 }
 
+/*designing the popup content*/
 .popUpContent {
 	margin: auto;
 	display: block;
 	max-width: 68%;
 }
 
+/*designing the X button*/
 .closePopUp {
 	position: absolute;
 	color: #ffffff;
@@ -527,5 +539,9 @@ p.colItemName {
 	cursor: pointer;
 	padding: 0.1em 1em;
 }
+
+/*
+End of pop up design setup
+*/
 
 /* End of the stylesheet styling*/
