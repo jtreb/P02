@@ -517,11 +517,6 @@ p.colItemName {
 	margin: auto;
 	display: block;
 	max-width: 68%;
-
-	-webkit-animation-name: zoom;
-	-webkit-animation-duration: 0.5s;
-	animation-name: zoom;
-	animation-duration: 0.5s;
 }
 
 .closePopUp {
