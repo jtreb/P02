@@ -96,4 +96,80 @@ nav {
 }
 /*end of sub-navigation styling*/
 
+/*for making diving lines(every section that does not have an id)*/
+section:not([id]) {
+  padding: 1em 0 2em;
+  border-top: 0.1em dashed #333;
+}
+
+/*styling level of headings*/
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+section h2{
+  color: #99CCCC;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+section h3{
+  margin-bottom: 2em;
+}
+
+section h4 {
+  margin-bottom: 0.5em;
+}
+/*end of level of headings styling*/
+
+/*styling for paragraph*/
+p {
+  max-width: 50em;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+section p {
+  margin-bottom: 0.5em;
+  color: #666;
+}
+/*end of for paragraph styling*/
+
+/*styling for sample code display*/
+section code{
+  border: 0.1em solid #99CCCC;
+  border-left-width: thick;
+  background-color: #F8FFF8;
+  color: #666;
+  padding: 1.25em;
+  margin-bottom: 1em;
+  display: block;
+  line-height: 2em;
+}
+/*end of sample code display styling*/
+
+/*styling for the citation links*/
+ul.citations {
+  padding-left: 0
+}
+
+ul.citations li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 1em;
+}
+
+ul.citations li strong {
+  font-weight: normal;
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+/*end of citations links styling*/
+
 /* End of the stylesheet styling*/
