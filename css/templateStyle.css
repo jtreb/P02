@@ -1,0 +1,53 @@
+body {
+  background: #020309;
+  /*background: linear-gradient(145deg, #020309, #000);*/
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+}
+
+.headerBox {
+  background: rgba(255, 255, 255, 0.85);
+  display: inline-block;
+  padding: 0 25px;
+  flex: 1;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.menuLink {
+  /*background: white;*/
+  margin-top: 10px;
+  float: left;
+  padding: 20px 20px 0;
+}
+
+.brandLogo {
+  margin-right: 10px;
+  align-items: center;
+  background: #999;
+  padding: 20px;
+}
+
+.startAccount {
+  float: right;
+  margin-top: 30px;
+}
+
+.lineDivid {
+  margin: 0 10px;
+  border-left: 1px solid #FFF;
+}
