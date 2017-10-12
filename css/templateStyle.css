@@ -75,17 +75,6 @@ header a, footer a {
 
 
 
-
-.contentContainer {
-  background: linear-gradient(to top left, rgba(67, 83, 255, 0) 55%, rgba(67, 83, 255, 0.25));
-  height: 1000px;
-  padding: 20em;
-}
-
-
-
-
-
 /*
   footer styling
   */
@@ -131,4 +120,68 @@ header a, footer a {
 }
 /*
   footer styling end here
-  */
+*/
+
+
+
+/*
+  body content styling
+*/
+.contentContainer {
+  background: linear-gradient(to top left, rgba(67, 83, 255, 0) 55%, rgba(67, 83, 255, 0.25));
+  padding: 20em;
+}
+
+section.contentContainer {
+  border: none;
+}
+
+/*carousel image styling*/
+.carouselImg {
+  max-width: 100%;
+  margin: 0;
+  margin-top: 75px;
+  height: 500px;
+  background: gray;
+}
+
+.carouselImg img {
+  height: 500px;
+  color: #999;
+}
+
+.carouselButton {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 200%;
+  padding: 0.5em 1em;
+  position: relative;
+  top: 45%;
+  color: #FFF;
+}
+
+.carouselButton:hover, .carouselButton:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonLeft {
+  float: left;
+  left: 0%;
+}
+
+.buttonRight {
+  float: right;
+  right: 0%;
+}
+
+.carouselText {
+  color: #FFF;
+  text-align: center;
+  font-size: 200%;
+  max-width: 100%;
+  position: relative;
+  top: 45%;
+}
+/*carousel image styling end here*/
