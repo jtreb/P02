@@ -4,85 +4,93 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P02: Templates</title>
+
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/templateStyle.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="pageContainer">
+    <div class="pageBox">
       <!-- main navigation -->
-      <nav class="pageMenu">
-        <p>Other Pages:</p>
+      <header class="headerBox">
+        <!-- compang logo in header -->
+        <div class="brandLogo menuLink">
+          <!-- later on, insert logo img -->
+          <a href="#">company logo</a>
+        </div>
+        <!-- logo end here -->
 
-        <!-- menu links for other pages -->
-        <ul class="mainNavBox">
-          <li><a href="newStyleGuide.html" class="navBoxItem">Style Guide</a></li>
-          <li><a href="sitemap.html" class="navBoxItem">Sitemap</a></li>
-          <li><a href="citations.html" class="navBoxItem">Citations</a></li>
-          <li><a href="templates.html" class="navBoxItem navActive">Templates</a></li>
-          <li><a href="home.html" class="navBoxItem">Website Pages</a></li>
-        </ul>
-      </nav>
+        <!-- site navigative -->
+        <a href="#" class="menuLink menuBoxItem">Home</a>
+        <a href="#" class="menuLink menuBoxItem">Shop</a>
+        <a href="#" class="menuLink menuBoxItem">News</a>
+        <a href="#" class="menuLink menuBoxItem">Forums</a>
+        <a href="#" class="menuLink menuBoxItem">About</a>
+        <!-- site navigative end here -->
+
+        <!-- start account: sign in/sign up -->
+        <div class="startAccount">
+          <a href="#signIn" class="accountLink">Sign in</a>
+          <span class="lineDivid"></span>
+          <a href="#createAccount" class="accountLink">Create Account</a>
+        </div>
+        <!-- account end here -->
+      </header>
       <!-- main navigation end here -->
 
-      <!-- templates contents -->
-      <div class="pageContent">
-        <!-- sub-navigation & code syntax -->
-        <div class="contentTopic">
-          <h1>P01: Template</h1>
+      <section class="contentContainer">
 
-          <!-- sub-navigation for contents on this page -->
-          <ul class="subNavBox">
-            <li class="subNavItem"><a href="#header">Header</a></li>
-            <li class="subNavItem"><a href="#footer">footer</a></li>
-          </ul>
-          <!-- sub-navigation end here -->
+      </section>
 
-          <!-- Section -->
-          <section id="header">
-            <h2>Header</h2>
+      <footer>
+        <div class="footerContainer">
+          <div class="footerWrap">
+            <!-- brand logo in footer -->
+            <div class="footerColumn brandLogo">
+              <a href="#">company logo</a>
+            </div>
+            <!-- logo display end here -->
 
-            <header class="pageHeader">
-              <!-- compang logo in header -->
-              <div class="logo">
-                <!-- later on, insert logo img -->
-              </div>
-              <!-- logo end here -->
+            <!-- product list -->
+            <div class="footerColumn">
+              <h5>Product</h5>
+              <a href="#" class="footerLink">Stuffed Gift</a>
+              <a href="#" class="footerLink">Clothes</a>
+              <a href="#" class="footerLink">Accessories</a>
+            </div>
+            <!-- product list end here-->
 
-              <!-- site navigative -->
-              <nav class="navBox">
-                <a href="#" class="navButton navBoxItem navActive">Home</a>
-                <a href="#" class="navButton navBoxItem">Shop</a>
-                <a href="#" class="navButton navBoxItem">News</a>
-                <a href="#" class="navButton navBoxItem">Forums</a>
-                <a href="#" class="navButton navBoxItem">About</a>
-              </nav>
-              <!-- site navigative end here -->
+            <!-- company info -->
+            <div class="footerColumn">
+              <h5>Company</h5>
+              <a href="#" class="footerLink">About</a>
+              <a href="#" class="footerLink">Sitemap</a>
+              <a href="#" class="footerLink">News</a>
+            </div>
+            <!-- company info end here-->
 
-              <!-- start account: sign in/sign up -->
-              <div class="StartAccount">
-                <a href="#signInLink">Sign in</a>
-                <span class="lineDivid"></span>
-                <a href="#createAccount">Create Account</a>
-              </div>
-              <!-- account end here -->
+            <!-- Support list -->
+            <div class="footerColumn">
+              <h5>Support</h5>
+              <a href="#" class="footerLink">Contact</a>
+              <a href="#" class="footerLink">Forums</a>
+            </div>
+            <!-- support list end here-->
 
-            </header>
+            <!-- Social media list -->
+            <div class="footerColumn">
+              <h5>Connect</h5>
+              <a href="#" class="footerLink">Facebook</a>
+              <a href="#" class="footerLink">Snapchat</a>
+              <a href="#" class="footerLink">Instagram</a>
+            </div>
+            <!-- Social media list end here-->
+          </div>
 
-          </section>
-          <!-- Section end here -->
+          <p class="copyRightText footerColumn">© 2017, Eva &amp; Jameson | All Rights Reserved.</p>
         </div>
-        <!-- sub-navigation & section end here-->
 
-        <!-- Section -->
-        <div class="contentTopic">
-          <section id="">
-            <h2></h2>
-          </section>
-        </div>
-        <!-- Section end here-->
-
-      </div>
-      <!-- templates contents end here -->
+      </footer>
     </div>
   </body>
 
