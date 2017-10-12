@@ -79,7 +79,7 @@ header a, footer a {
   footer styling
   */
 .footerContainer {
-  padding: 0 25px 10px;
+  padding: 3em 5em 1em;
 }
 
 .footerWrap {
@@ -132,15 +132,19 @@ header a, footer a {
   padding: 20em;
 }
 
-section.contentContainer {
+section:not([id]) {
   border: none;
+  padding: 0;
+}
+
+.contentBox {
+  margin-bottom: 2em;
 }
 
 /*carousel image styling*/
 .carouselImg {
   max-width: 100%;
-  margin: 0;
-  margin-top: 75px;
+  margin-top: 110px;
   height: 500px;
   background: gray;
 }
