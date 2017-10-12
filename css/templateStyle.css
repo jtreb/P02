@@ -1,9 +1,19 @@
 body {
   background: #020309;
-  /*background: linear-gradient(145deg, #020309, #000);*/
   margin: 0;
   padding: 0;
 }
+
+h5 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 1.5em;
+}
+
+/*
+  header styling
+*/
 
 header {
   position: fixed;
@@ -16,23 +26,28 @@ header {
 }
 
 .headerBox {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(153, 204, 254, 0.2);
   display: inline-block;
   padding: 0 25px;
   flex: 1;
 }
 
-header a {
+header a, footer a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   color: #FFF;
+  opacity: 0.6;
 }
 
 .menuLink {
-  /*background: white;*/
   margin-top: 10px;
   float: left;
   padding: 20px 20px 0;
+}
+
+.menuLink:hover, .menuLink:focus,
+.accountLink:hover, .accountLink:focus {
+  opacity: 1;
 }
 
 .brandLogo {
@@ -40,6 +55,8 @@ header a {
   align-items: center;
   background: #999;
   padding: 20px;
+  max-width: 200px;
+  height: 60px;
 }
 
 .startAccount {
@@ -51,3 +68,67 @@ header a {
   margin: 0 10px;
   border-left: 1px solid #FFF;
 }
+
+/*
+  header styling end here
+*/
+
+
+
+
+.contentContainer {
+  background: linear-gradient(to top left, rgba(67, 83, 255, 0) 55%, rgba(67, 83, 255, 0.25));
+  height: 1000px;
+  padding: 20em;
+}
+
+
+
+
+
+/*
+  footer styling
+  */
+.footerContainer {
+  padding: 0 25px 10px;
+}
+
+.footerWrap {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin-bottom: 20px;
+}
+
+.footerLink {
+  display: block;
+  align-self: flex-start;
+  flex: 0 0 auto;
+  padding: 10px 0;
+}
+
+.footerLink:hover, .footerLink:focus {
+  opacity: 1;
+}
+
+.footerContainer .brandLogo {
+  flex: 0 auto;
+  margin-right: 60px;
+}
+
+.copyRightText {
+  text-align: center;
+  max-width: 100%;
+  margin-top: 30px;
+}
+/*
+  footer styling end here
+  */
