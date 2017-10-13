@@ -104,8 +104,11 @@ section:not([id]) {
 /*styling level of headings*/
 h1 {
   display: block;
-  font-size: 2em;
-  margin-bottom: 0;
+  font-size: 2.5em;
+	color: #ffffff;
+	margin-top: 2em;
+	margin-left: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 section h2{
@@ -273,7 +276,7 @@ form[method=filter] {
 }
 
 input[type=radio] {
-	display: block;
+	display: inline-block;
   padding: 12px 20px;
   margin: 0.5em 0em;
   border: 1px solid #ccc;
