@@ -1,62 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=width-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="css/main.css" rel="stylesheet">
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/templateStyle.css" rel="stylesheet">
+
+    <!-- linking to jQuery library from Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <h1>Home</h1>
-    <!-- Navigation Header Bar -->
-    <section>
-      <nav>
-        <a href="homeWithAccount.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="news.html">News</a>
-        <a href="shop.html">Shop</a>
-        <a href="forums.html">Forums</a>
-        <a href="account.html">Account</a>
-      </nav>
-    </section>
+    <div class="pageBox">
+      <!-- main navigation -->
+      <header class="headerBoxDark">
+        <!-- compang logo in header -->
+        <div class="brandLogo menuLink">
+          <!-- later on, insert logo img -->
+          <a href="#">company logo</a>
+        </div>
+        <!-- logo end here -->
 
-    <!-- Header Image Carousel -->
-    <section>
-      <h2>Header Image Carousel Area</h2>
-    </section>
+        <!-- site navigative -->
+        <a href="homeWithAccount.html" class="menuLink menuBoxItem">Home</a>
+        <a href="shop.html" class="menuLink menuBoxItem">Shop</a>
+        <a href="news.html" class="menuLink menuBoxItem">News</a>
+        <a href="forums.html" class="menuLink menuBoxItem">Forums</a>
+        <a href="about.html" class="menuLink menuBoxItem">About</a>
+        <!-- site navigative end here -->
 
-    <!-- News and Forum Update Previews -->
-    <section>
-      <h2>News and Forums Update Preview</h2>
-      <!-- News preview area -->
-      <div></div>
-      <!-- Forums preview area -->
-      <div></div>
-    </section>
+        <!-- start account: sign in/sign up -->
+        <div class="startAccount">
+          <a href="login.html" class="accountLink">Log in</a>
+          <span class="lineDivid"></span>
+          <a href="signUp.html" class="accountLink">Create Account</a>
+        </div>
+        <!-- account end here -->
+      </header>
+      <!-- main navigation end here -->
 
-    <!-- Product List -->
-    <section>
-      <h2> Product List </h2>
-      <!-- Search Bar -->
-      <div></div>
-      <!-- Filter -->
-      <div></div>
-    </section>
+      <!-- page content section -->
+      <section class="contentContainer">
+        <!-- carousel image section -->
+        <section class="carouselImg contentBox">
+          <!-- <img src="img/" alt="slide 1 img"> -->
+          <button class="carouselButton buttonLeft">&#10094;</button>
+          <button class="carouselButton buttonRight">&#10095;</button>
+          <p class="carouselText">carousel images</p>
+        </section>
+        <!-- carousel image section end here -->
 
-    <!-- Footer -->
-    <section>
-      <h2>Footer</h2>
-      <nav>
-        <a href="homeWithAccount.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="about.html">Contact Us</a>
-        <a href="news.html">News</a>
-        <a href="shop.html">Shop</a>
-        <a href="forums.html">Forums</a>
-      </nav>
-    </section>
+        <!-- news and forums update preview section -->
+        <section class="previewBox contentBox">
+          <h3>News and Forums</h3>
+
+          <div class="previewColumn">
+            <div class="previewItem">
+              <figure>
+                <img src="../img/img1_octopus.jpg" alt="a red octopus underwater">
+              </figure>
+              <h2>News / Forums Topic Title</h2>
+              <p class="newsForumsDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="">Read more</a></p>
+            </div>
+
+
+            <span class="lineDividDark"></span>
+
+            <div class="previewItem">
+              <h3>Latest Post</h3>
+                <div class="previewSubItem">
+                  <figure>
+                    <img src="../img/img1_octopus.jpg" alt="a red octopus underwater">
+                  </figure>
+                  <p class="newsForumsDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="">Read more</a></p>
+                </div>
+
+                <div class="previewSubItem">
+                  <figure>
+                    <img src="../img/img1_octopus.jpg" alt="a red octopus underwater">
+                  </figure>
+                  <p class="newsForumsDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="">Read more</a></p>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- news and forums update preview end here -->
+
+        <!-- product list section -->
+        <section class="productBox contentBox">
+            <div class="productItem">
+              <h2 class="productName">Product Name</h2>
+              <figure>
+                <img src="../img/img1_octopus.jpg" alt="a red octopus underwater">
+              </figure>
+              <p class="productDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="">Read more</a></p>
+              <div class="productButtonsBox">
+                <a href="" class="productButton">CART</a>
+                <a href="" class="productButton">SIMILAR</a>
+                <a href="" class="productButton">BUY</a>
+              </div>
+            </div>
+
+            <div class="productItem">
+              <h2 class="productName">Product Name</h2>
+              <figure>
+                <img src="../img/img2_nautilus.jpg" alt="a red octopus underwater">
+              </figure>
+              <p class="productDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="">Read more</a></p>
+              <div class="productButtonsBox">
+                <a href="" class="productButton">CART</a>
+                <a href="" class="productButton">SIMILAR</a>
+                <a href="" class="productButton">BUY</a>
+              </div>
+            </div>
+
+            <div class="productItem">
+              <h2 class="productName">Product Name</h2>
+              <figure>
+                <img src="../img/img3_cuttlefish.jpg" alt="a red octopus underwater">
+              </figure>
+              <p class="productDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="">Read more</a></p>
+              <div class="productButtonsBox">
+                <a href="" class="productButton">CART</a>
+                <a href="" class="productButton">SIMILAR</a>
+                <a href="" class="productButton">BUY</a>
+              </div>
+            </div>
+
+            <div class="productItem">
+              <h2 class="productName">Product Name</h2>
+              <figure>
+                <img src="../img/img4_aquarium.jpg" alt="a red octopus underwater">
+              </figure>
+              <p class="productDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="">Read more</a></p>
+              <div class="productButtonsBox">
+                <a href="" class="productButton">CART</a>
+                <a href="" class="productButton">SIMILAR</a>
+                <a href="" class="productButton">BUY</a>
+              </div>
+            </div>
+        </section>
+        <!-- product list section end here -->
+
+      </section>
+      <!-- page content section end here -->
+
+      <!-- brand footer -->
+      <footer>
+        <div class="footerContainer">
+          <div class="footerWrap">
+            <!-- brand logo in footer -->
+            <div class="footerColumn brandLogo">
+              <a href="homeWithAccount.html">company logo</a>
+            </div>
+            <!-- logo display end here -->
+
+            <!-- product list -->
+            <div class="footerColumn">
+              <h5>Product</h5>
+              <a href="shop.html" class="footerLink">Shop</a>
+              <a href="#" class="footerLink">Gift</a>
+              <a href="#" class="footerLink">Accessories</a>
+            </div>
+            <!-- product list end here-->
+
+            <!-- company info -->
+            <div class="footerColumn">
+              <h5>Company</h5>
+              <a href="about.html" class="footerLink">About</a>
+              <a href="../newStyleGuide.html" class="footerLink">Style Guide</a>
+              <a href="../sitemap.html" class="footerLink">Sitemap</a>
+            </div>
+            <!-- company info end here-->
+
+            <!-- Support list -->
+            <div class="footerColumn">
+              <h5>Support</h5>
+              <a href="about.html" class="footerLink">Contact</a>
+              <a href="news.html" class="footerLink">News</a>
+              <a href="forums.html" class="footerLink">Forums</a>
+            </div>
+            <!-- support list end here-->
+
+            <!-- Social media list -->
+            <div class="footerColumn">
+              <h5>Connect</h5>
+              <a href="#" class="footerLink">Facebook</a>
+              <a href="#" class="footerLink">Snapchat</a>
+              <a href="#" class="footerLink">Instagram</a>
+            </div>
+            <!-- Social media list end here-->
+          </div>
+
+          <p class="copyRightText footerColumn">© 2017, Eva &amp; Jameson | All Rights Reserved.</p>
+        </div>
+
+      </footer>
+      <!-- brand footer end here-->
+
+      <!-- linking scrollColor jQuery to file -->
+      <script type="text/javascript" src="../js/template.js"></script>
+    </div>
   </body>
 
 </html>
