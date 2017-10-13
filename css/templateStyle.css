@@ -134,17 +134,18 @@ header a, footer a {
 
 section:not([id]) {
   border: none;
-  padding: 0;
 }
 
 .contentBox {
   margin-bottom: 2em;
 }
 
+
+
 /*carousel image styling*/
 .carouselImg {
   max-width: 100%;
-  margin-top: 110px;
+  margin-top: 90px;
   height: 500px;
   background: gray;
 }
@@ -189,3 +190,65 @@ section:not([id]) {
   top: 45%;
 }
 /*carousel image styling end here*/
+
+
+
+
+/*news and forums update preview styling*/
+.previewBox.contentBox {
+  background: #FFF;
+  padding: 1em 0;
+}
+
+.previewBox h3 {
+  margin-left: 2em;
+}
+
+.previewColumn {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.previewItem {
+  display: inline-block;
+  flex: 1;
+  padding: 0 0 1em 0;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
+.previewItem h2 {
+  margin: 0;
+}
+
+.previewItem h3 {
+   margin: 0 0 1em;
+ }
+
+.newsForumsDetail {
+  display: block;
+  align-self: flex-start;
+  flex: 0 0 auto;
+}
+
+.previewColumn div:nth-of-type(1) {
+  flex-grow: 2;
+}
+
+.previewColumn div:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+.lineDividDark {
+  margin: 0 10px;
+  border-left: 1px solid #333;
+}
+
+.previewItem {
+  padding: 0 2em;
+}
+
+
+/*news and forums update preview styling end here*/
