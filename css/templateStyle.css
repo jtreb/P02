@@ -32,14 +32,20 @@ header {
   background: rgba(0, 0, 0, 0);
 }
 
+.headerBoxDark a, footer a,
+.headerBoxLight a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #FFF;
+  opacity: 0.6;
+}
+
 .headerBoxLight {
   background: rgba(255, 255, 255, 0);
 }
 
-header a, footer a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #FFF;
+.headerBoxLight a {
+  color: #333;
   opacity: 0.6;
 }
 
