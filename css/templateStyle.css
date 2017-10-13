@@ -22,14 +22,14 @@ header {
   top: 0px;
   width: 100%;
   height: 80px;
-  z-index: 1000;
+  z-index: 9999;
   display: inline-block;
   padding: 0 25px;
   flex: 1;
 }
 
 .headerBoxDark {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .headerBoxDark a, footer a,
@@ -150,12 +150,27 @@ section:not([id]) {
   margin-bottom: 2em;
 }
 
+section.contentBoxLight {
+  background: #FFF;
+  color: #333;
+  padding: 9em 0;
+}
+
+section.contentBoxDark {
+  background: #020309;
+  color: #FFF;
+  padding: 9em 0;
+}
+
+.firstContent {
+  margin-top: 90px;
+}
+
 
 
 /*carousel image styling*/
 .carouselImg {
   max-width: 100%;
-  margin-top: 90px;
   height: 500px;
   background: gray;
 }
@@ -259,6 +274,57 @@ section:not([id]) {
 .previewItem {
   padding: 0 2em;
 }
-
-
 /*news and forums update preview styling end here*/
+
+
+
+/*
+  about template
+*/
+section .fullTextBox {
+  padding: 4em;
+}
+
+.fullLengthText {
+  max-width: 100%;
+  display: block;
+}
+
+.centerContent {
+  margin: 0 20em;
+}
+
+.centerTitle {
+  text-align: center;
+}
+
+.centerParagraph {
+  text-align: center;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+.contactContainer {
+  display: inline-block;
+  width: 100%;
+  padding: 2em;
+  border-top: 2px solid #99CCCC;
+  margin-top: 2em;
+}
+
+.formGroup {
+  margin: 1em 0 3em;
+}
+
+input[id]{
+  width: 100%;
+}
+input[id=contacterMsm]{
+  height: 100px;
+}
+
+
+
+/*
+  about template end here
+*/
