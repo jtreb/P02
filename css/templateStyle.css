@@ -96,7 +96,7 @@ header {
   margin: 0;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   flex: 1;
 }
 
@@ -137,7 +137,7 @@ header {
 /*
   account styling continue ////////////////////////
 */
-section.contentBoxLight.firstContent {
+section.contentBoxLight.firstContent.subMenu {
   padding: 0;
 }
 
@@ -172,10 +172,10 @@ section.contentBoxLight.firstContent {
   text-decoration: underline;
 }
 
-button.editButton {
+/*button.editButton {
   position: relative;
   left: 30em;
-}
+}*/
 
 .editButton {
   border: 2px solid #225c89;
@@ -382,9 +382,10 @@ section .fullTextBox {
   margin: 1em 0 3em;
 }
 
-input[id] {
+input[id]{
   width: 100%;
 }
+
 input[id=contacterMsm]{
   height: 100px;
 }

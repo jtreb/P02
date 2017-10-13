@@ -251,13 +251,19 @@ form[method=login] {
 }
 
 input[type=text], input[type=password], input[type=search]#forSearch {
-  display: inline;
-  width: 30%;
+  display: block;
+  width: 40em;
   padding: 12px 20px;
-  margin: 0.5em 1em;
+  margin: 0.5em 0em;
   border: 1px solid #ccc;
   border-radius: 4px;
 	font-size: 1em;
+}
+
+input[type=search]#forSearch {
+	display: inline;
+	width: 30%;
+	margin: 0.5em 1em;
 }
 
 input[type=text]:active, input[type=text]:hover, input[type=text]:focus,
