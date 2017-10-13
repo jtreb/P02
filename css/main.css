@@ -114,7 +114,6 @@ h1 {
 section h2{
   color: #99CCCC;
   font-weight: bold;
-  margin-bottom: 1em;
 }
 
 section h3{
@@ -129,7 +128,7 @@ section h4 {
 /*styling for paragraph*/
 p {
   max-width: 50em;
-  margin: 0;
+  margin: 0.5em 0em;
   line-height: 1.5em;
 }
 
@@ -299,6 +298,8 @@ ul.bullettedList {
   list-style-type: circle;
   line-height: 1.5em;
   margin: 0;
+	margin-bottom: 0.9em;
+	color: #ffffff;
 }
 
 /*styling for Numbered list*/
@@ -582,6 +583,23 @@ input[type=submit] {
 }
 
 input[type=submit]:hover, input[type=submit]:focus {
+  background-color: #f79c7b;
+}
+
+a.productDetailButton {
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.35em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #49c8e5;
+  color: white;
+  transition: background-color 0.5s ease-out;
+	font-size: 2em;
+}
+
+a.productDetailButton:hover, a.productDetailButton:focus {
   background-color: #f79c7b;
 }
 
