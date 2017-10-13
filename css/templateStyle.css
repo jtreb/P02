@@ -335,9 +335,9 @@ input[id=contacterMsm]{
 
 
 /*
-  login section
+  login & signup section
 */
-div.loginTitle {
+div.loginTitle, div.signupTitle {
   margin-top: 0.5em;
   font-size: 3.2em;
   font-weight: 400;
@@ -345,7 +345,7 @@ div.loginTitle {
   color: #DDD;
 }
 
-form.login {
+form.login, form.signup{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -353,17 +353,17 @@ form.login {
   margin-top: 1em;
 }
 
-.newUser {
+.newUser, .currentUser {
   color:#CCC;
   margin-bottom: 3em;
 }
 
-.newUser a {
+.newUser a, .currentUser a{
   color: #99CCCC;
   text-decoration: none;
 }
 
-.loginContainer {
+.loginContainer, .signupContainer {
   display: inline-block;
   margin-top: 0.5em;
   width: 25%;
@@ -389,7 +389,7 @@ input#username, input#password {
 }
 
 
-.loginButton {
+.loginButton, .signupButton{
   margin-top: 3.5em;
   color: #FFF;
   border: none;
@@ -400,3 +400,13 @@ input#username, input#password {
 .loginButton:hover, .loginButton:focus {
   opacity: 0.9;
 }
+
+.signupButton {
+  background-color: transparent;
+  border: 1px solid #225c89;
+  color: #99CCCC;
+}
+
+/*
+  login & signup section end here
+*/
