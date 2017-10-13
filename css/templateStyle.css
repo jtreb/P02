@@ -369,10 +369,10 @@ form.login, form.signup{
   width: 25%;
 }
 
-input#username, input#password {
+/*input#username, input#password {
   height: 50px;
   font-size: 1em;
-}
+}*/
 
 .forget {
   margin: 0;
