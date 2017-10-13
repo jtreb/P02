@@ -1,73 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=width-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-    <title>Purchase</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/templateStyle.css" rel="stylesheet">
 
-    <link href="css/main.css" rel="stylesheet">
+    <!-- linking to jQuery library from Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <h1>Purchase</h1>
-    <!-- Navigation Header Bar -->
-    <sections>
-      <nav>
-        <a href="homeWithAccount.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="news.html">News</a>
-        <a href="shop.html">Shop</a>
-        <a href="forums.html">Forums</a>
-        <a href="account.html">Account</a>
-      </nav>
-    </sections>
+    <div class="pageBox">
+      <!-- main navigation -->
+      <header class="headerBoxDark">
+        <!-- compang logo in header -->
+        <div class="brandLogo menuLink">
+          <!-- later on, insert logo img -->
+          <a href="#">company logo</a>
+        </div>
+        <!-- logo end here -->
 
-    <!-- Cart -->
-    <section>
-      <h2>Purchasing Cart</h2>
-      <!-- contains all the "added to cart" purchases in the SAME LAYOUT as product list -->
-    </section>
+        <!-- site navigative -->
+        <a href="homeWithAccount.html" class="menuLink menuBoxItem">Home</a>
+        <a href="shop.html" class="menuLink menuBoxItem">Shop</a>
+        <a href="news.html" class="menuLink menuBoxItem">News</a>
+        <a href="forums.html" class="menuLink menuBoxItem">Forums</a>
+        <a href="about.html" class="menuLink menuBoxItem">About</a>
+        <!-- site navigative end here -->
 
-    <!-- Purchase Method -->
-    <section>
-      <h2>Purchase Method</h2>
-      <!-- credit, debit, paypal -->
-      <!-- Possible dropdown options -->
-    </section>
+        <!-- start account: sign in/sign up -->
+        <div class="startAccount">
+          <a href="home.html" class="accountLink">Log out</a>
+          <span class="lineDivid"></span>
+          <a href="account.html" class="accountLink">Account</a>
+        </div>
+        <!-- account end here -->
+      </header>
+      <!-- main navigation end here -->
 
-    <!-- Purchase Method Forms -->
-    <section>
-      <h2>Purchase Method Forms</h2>
-      <!-- credit card example: First Name, Last Name, Credit Card Number 4 Forms, Expiry Date, Mailing Address, etc -->
-      <!-- this section should change depending on the chosen purchase method above -->
-    </section>
 
-    <!-- Confirmation -->
-    <section>
-      <h2>Confirmation</h2>
-      <!-- pop up asking to confirm, "back" or "continue" -->
-    </section>
+      <!-- page content section -->
+      <section class="contentContainer">
+        <!-- carousel image section -->
+        <section class="contentBoxLight firstContent subMenu">
+          <div class="subMenuContainer">
+            <div class="subMenuWrapper">
 
-    <!-- Success/Fail -->
-    <section>
-      <h2>Success</h2>
-      <!-- pop up saying the purchase was SUCCESSFUL, leads to "back to home" -->
-    </section>
+              <div class="subMenuColumn smallPortion">
+                <a href="account.html" class="subMenuLink">General</a>
+                <a href="#" class="subMenuLink">Security</a>
+                <hr class="subMenuDivid">
+                <a href="#" class="subMenuLink">Notification</a>
+                <a href="#" class="subMenuLink">Posts</a>
+                <hr class="subMenuDivid">
+                <a href="purchase.html" class="subMenuLink">Cart</a>
+                <a href="#" class="subMenuLink">Purchase History</a>
+                <a href="#" class="subMenuLink">Redeem Code</a>
+              </div>
 
-    <!-- Footer -->
-    <section>
-      <h2>Footer</h2>
-      <nav>
-        <a href="homeWithAccount.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="about.html">Contact Us</a>
-        <a href="news.html">News</a>
-        <a href="shop.html">Shop</a>
-        <a href="forums.html">Forums</a>
-      </nav>
-    </section>
+              <span class="horzDivid"></span>
+
+              <div class="subMenuColumn largePortion">
+                <h3>Cart</h3>
+                <!-- product list section -->
+                <section class="productBox contentBox">
+                    <div class="productItem">
+                      <h2 class="productName">Product Name</h2>
+                      <figure>
+                        <img src="../img/img1_octopus.jpg" alt="a red octopus underwater">
+                      </figure>
+                      <p class="productDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="product1Details.html">Read more</a></p>
+                      <div class="productButtonsBox">
+                        <a href="purchase.html" class="productButton">CART</a>
+                        <a href="shop.html" class="productButton">SIMILAR</a>
+                        <a href="purchase.html" class="productButton">BUY</a>
+                      </div>
+                    </div>
+
+                    <div class="productItem">
+                      <h2 class="productName">Product Name</h2>
+                      <figure>
+                        <img src="../img/img2_nautilus.jpg" alt="a nautilus underwater">
+                      </figure>
+                      <p class="productDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="product2Details.html">Read more</a></p>
+                      <div class="productButtonsBox">
+                        <a href="purchase.html" class="productButton">CART</a>
+                        <a href="shop.html" class="productButton">SIMILAR</a>
+                        <a href="purchase.html" class="productButton">BUY</a>
+                      </div>
+                    </div>
+
+                    <div class="productItem">
+                      <h2 class="productName">Product Name</h2>
+                      <figure>
+                        <img src="../img/img3_cuttlefish.jpg" alt="a cuttlefish underwater">
+                      </figure>
+                      <p class="productDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="product1Details.html">Read more</a></p>
+                      <div class="productButtonsBox">
+                        <a href="purchase.html" class="productButton">CART</a>
+                        <a href="shop.html" class="productButton">SIMILAR</a>
+                        <a href="purchase.html" class="productButton">BUY</a>
+                      </div>
+                    </div>
+
+                    <div class="productItem">
+                      <h2 class="productName">Product Name</h2>
+                      <figure>
+                        <img src="../img/img4_aquarium.jpg" alt="an aquarium">
+                      </figure>
+                      <p class="productDetail">Sed a mauris sit amet dui malesuada tempor a vitae diam. Nullam euismod non dui a blandit. Class aptent taciti sociosqu ad litora torquent...<a href="product2Details.html">Read more</a></p>
+                      <div class="productButtonsBox">
+                        <a href="purchase.html" class="productButton">CART</a>
+                        <a href="shop.html" class="productButton">SIMILAR</a>
+                        <a href="purchase.html" class="productButton">BUY</a>
+                      </div>
+                    </div>
+                </section>
+                <!-- product list section end here -->
+
+                <!-- purchase method -->
+                <h3>Purchase Method</h3>
+
+                <div class="productButtonsBox">
+                  <a href="purchase.html" class="productDetailButton">Credit Card</a>
+                  <a href="shop.html" class="productDetailButton">Debit Card</a>
+                  <a href="purchase.html" class="productDetailButton">PayPal</a>
+                </div>
+
+                <!-- purchase method forms -->
+                <h3>Purchase Method Forms</h3>
+
+                <form class="accountEdit" action="#" method="post">
+                  <label for="firstName">First Name</label>
+                  <input type="text">
+
+                  <label for="username">Last Name</label>
+                  <input type="text">
+
+                  <label for="email">Credit Card Number</label>
+                  <input type="text" class="besideForms" placeholder="XXXX">
+                  <input type="text" class="besideForms" placeholder="XXXX">
+                  <input type="text" class="besideForms" placeholder="XXXX">
+                  <input type="text" class="besideForms" placeholder="XXXX">
+
+                  <label for="email">Expiry Date</label>
+                  <input type="text" class="besideForms" placeholder="XX">
+                  <input type="text" class="besideForms" placeholder="XX">
+
+                  <label for="email">Mailing Address</label>
+                  <input type="text">
+
+                  <input type="submit" value="Finish">
+                  <input type="submit" value="Cancel">
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- carousel image section end here -->
+      </section>
+
+      <!-- Account Content -->
+      <!-- <section> -->
+        <!-- Edit account Forms -->
+        <!-- <section>
+          <h2>Edit Account Information</h2>
+        </section> -->
+
+        <!-- Cart -->
+        <!-- <section>
+          <h2>Cart</h2>
+          <a href="purchase.html">Purchasing Cart</a>
+        </section> -->
+
+        <!-- All your Forum Posts -->
+        <!-- <section>
+          <h2>Forum Posts</h2>
+        </section> -->
+
+        <!-- Purchase History WITH Status (Arrived, Arriving in (3) days, Cancelled, Returned, etc.) -->
+        <!-- <section>
+          <h2>Purchase History</h2>
+          a list similar to forumsGeneral.html list -->
+          <!-- clicking a product shows details about the product, when it was bought, and its status in detail -->
+        <!-- </section> -->
+
+        <!-- Adding Content and Forms/Buttons for Redeeming Code-->
+        <!-- <section>
+          <h2>Redeem Code</h2>
+        </section> -->
+
+      <!-- brand footer -->
+      <footer>
+        <div class="footerContainer">
+          <div class="footerWrap">
+            <!-- brand logo in footer -->
+            <div class="footerColumn brandLogo">
+              <a href="homeWithAccount.html">company logo</a>
+            </div>
+            <!-- logo display end here -->
+
+            <!-- product list -->
+            <div class="footerColumn">
+              <h5>Product</h5>
+              <a href="shop.html" class="footerLink">Shop</a>
+              <a href="#" class="footerLink">Gift</a>
+              <a href="#" class="footerLink">Accessories</a>
+            </div>
+            <!-- product list end here-->
+
+            <!-- company info -->
+            <div class="footerColumn">
+              <h5>Company</h5>
+              <a href="about.html" class="footerLink">About</a>
+              <a href="../newStyleGuide.html" class="footerLink">Style Guide</a>
+              <a href="../sitemap.html" class="footerLink">Sitemap</a>
+            </div>
+            <!-- company info end here-->
+
+            <!-- Support list -->
+            <div class="footerColumn">
+              <h5>Support</h5>
+              <a href="about.html#contact" class="footerLink">Contact</a>
+              <a href="news.html" class="footerLink">News</a>
+              <a href="forums.html" class="footerLink">Forums</a>
+            </div>
+            <!-- support list end here-->
+
+            <!-- Social media list -->
+            <div class="footerColumn">
+              <h5>Connect</h5>
+              <a href="#" class="footerLink">Facebook</a>
+              <a href="#" class="footerLink">Snapchat</a>
+              <a href="#" class="footerLink">Instagram</a>
+            </div>
+            <!-- Social media list end here-->
+          </div>
+
+          <p class="copyRightText footerColumn">© 2017, Eva &amp; Jameson | All Rights Reserved.</p>
+        </div>
+
+      </footer>
+      <!-- brand footer end here-->
+
+      <!-- linking scrollColor jQuery to file -->
+      <script type="text/javascript" src="../js/scrollColor.js"></script>
+    </div>
   </body>
 
 </html>
