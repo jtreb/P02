@@ -1,4 +1,4 @@
-
+// scrollColor jQuery
 // changing background-color opacity of header
 $(document).ready(function() {
   $(window).scroll(function() {
