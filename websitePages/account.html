@@ -1,77 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=width-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-    <title>Account</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/templateStyle.css" rel="stylesheet">
 
-    <link href="css/main.css" rel="stylesheet">
+    <!-- linking to jQuery library from Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <h1>Account</h1>
-    <!-- Navigation Header Bar -->
-    <section>
-      <nav>
-        <a href="homeWithAccount.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="news.html">News</a>
-        <a href="shop.html">Shop</a>
-        <a href="forums.html">Forums</a>
-        <a href="account.html">Account</a>
-      </nav>
-    </section>
+    <div class="pageBox">
+      <!-- main navigation -->
+      <header class="headerBoxDark">
+        <!-- compang logo in header -->
+        <div class="brandLogo menuLink">
+          <!-- later on, insert logo img -->
+          <a href="#">company logo</a>
+        </div>
+        <!-- logo end here -->
 
-    <!-- Account Content -->
-    <section>
-      <!-- Edit account Forms -->
-      <section>
-        <h2>Edit Account Information</h2>
+        <!-- site navigative -->
+        <a href="homeWithAccount.html" class="menuLink menuBoxItem">Home</a>
+        <a href="shop.html" class="menuLink menuBoxItem">Shop</a>
+        <a href="news.html" class="menuLink menuBoxItem">News</a>
+        <a href="forums.html" class="menuLink menuBoxItem">Forums</a>
+        <a href="about.html" class="menuLink menuBoxItem">About</a>
+        <!-- site navigative end here -->
+
+        <!-- start account: sign in/sign up -->
+        <div class="startAccount">
+          <a href="home.html" class="accountLink">Log out</a>
+          <span class="lineDivid"></span>
+          <a href="account.html" class="accountLink">Account</a>
+        </div>
+        <!-- account end here -->
+      </header>
+      <!-- main navigation end here -->
+
+
+      <!-- page content section -->
+      <section class="contentContainer">
+        <!-- carousel image section -->
+        <section class="contentBoxLight firstContent">
+          <div class="subMenuContaier">
+            <div class="subMenuWrapper">
+
+              <div class="subMenuColumn smallPortion">
+                <a href="#" class="subMenuLink">General</a>
+                <a href="#" class="subMenuLink">Security</a>
+                <hr class="subMenuDivid">
+                <a href="#" class="subMenuLink">Notification</a>
+                <a href="#" class="subMenuLink">Posts</a>
+                <hr class="subMenuDivid">
+                <a href="#" class="subMenuLink">Cart</a>
+                <a href="#" class="subMenuLink">Purchase History</a>
+                <a href="#" class="subMenuLink">Redeem Code</a>
+              </div>
+
+              <span class="horzDivid"></span>
+
+              <div class="subMenuColumn largePortion">
+                <h3>General Account Setting</h3>
+
+                <button type="button" class="editButton">Edit</button>
+
+                <form class="accountEdit" action="index.html" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" placeholder="Mx.Name">
+
+                  <label for="username">Username:</label>
+                  <input type="text" placeholder="Mx.Username">
+
+                  <label for="email">Email:</label>
+                  <input type="text" placeholder="mx.Name@mail.ca">
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- carousel image section end here -->
       </section>
 
-      <!-- Cart -->
+      <!-- Account Content -->
       <section>
-        <h2>Cart</h2>
-        <a href="purchase.html">Purchasing Cart</a>
-      </section>
+        <!-- Cart -->
+        <section>
+          <h2>Cart</h2>
+          <a href="purchase.html">Purchasing Cart</a>
+        </section>
 
-      <!-- All your Forum Posts -->
-      <section>
-        <h2>Forum Posts</h2>
-      </section>
+        <!-- All your Forum Posts -->
+        <section>
+          <h2>Forum Posts</h2>
+        </section>
 
-      <!-- Purchase History WITH Status (Arrived, Arriving in (3) days, Cancelled, Returned, etc.) -->
-      <section>
-        <h2>Purchase History</h2>
-        <!-- a list similar to forumsGeneral.html list -->
-        <!-- clicking a product shows details about the product, when it was bought, and its status in detail -->
-      </section>
+        <!-- Purchase History WITH Status (Arrived, Arriving in (3) days, Cancelled, Returned, etc.) -->
+        <section>
+          <h2>Purchase History</h2>
+          <!-- a list similar to forumsGeneral.html list -->
+          <!-- clicking a product shows details about the product, when it was bought, and its status in detail -->
+        </section>
 
-      <!-- Adding Content and Forms/Buttons for Redeeming Code-->
-      <section>
-        <h2>Redeem Code</h2>
-      </section>
+        <!-- Adding Content and Forms/Buttons for Redeeming Code-->
+        <section>
+          <h2>Redeem Code</h2>
+        </section>
 
-      <!-- Log Out Button -->
-      <section>
-        <h2>Log Out</h2>
-      </section>
-    </section>
+      <!-- brand footer -->
+      <footer>
+        <div class="footerContainer">
+          <div class="footerWrap">
+            <!-- brand logo in footer -->
+            <div class="footerColumn brandLogo">
+              <a href="homeWithAccount.html">company logo</a>
+            </div>
+            <!-- logo display end here -->
 
-    <!-- Footer -->
-    <section>
-      <h2>Footer</h2>
-      <nav>
-        <a href="homeWithAccount.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="about.html#contact">Contact Us</a>
-        <a href="news.html">News</a>
-        <a href="shop.html">Shop</a>
-        <a href="forums.html">Forums</a>
-      </nav>
-    </section>
+            <!-- product list -->
+            <div class="footerColumn">
+              <h5>Product</h5>
+              <a href="shop.html" class="footerLink">Shop</a>
+              <a href="#" class="footerLink">Gift</a>
+              <a href="#" class="footerLink">Accessories</a>
+            </div>
+            <!-- product list end here-->
+
+            <!-- company info -->
+            <div class="footerColumn">
+              <h5>Company</h5>
+              <a href="about.html" class="footerLink">About</a>
+              <a href="../newStyleGuide.html" class="footerLink">Style Guide</a>
+              <a href="../sitemap.html" class="footerLink">Sitemap</a>
+            </div>
+            <!-- company info end here-->
+
+            <!-- Support list -->
+            <div class="footerColumn">
+              <h5>Support</h5>
+              <a href="about.html#contact" class="footerLink">Contact</a>
+              <a href="news.html" class="footerLink">News</a>
+              <a href="forums.html" class="footerLink">Forums</a>
+            </div>
+            <!-- support list end here-->
+
+            <!-- Social media list -->
+            <div class="footerColumn">
+              <h5>Connect</h5>
+              <a href="#" class="footerLink">Facebook</a>
+              <a href="#" class="footerLink">Snapchat</a>
+              <a href="#" class="footerLink">Instagram</a>
+            </div>
+            <!-- Social media list end here-->
+          </div>
+
+          <p class="copyRightText footerColumn">© 2017, Eva &amp; Jameson | All Rights Reserved.</p>
+        </div>
+
+      </footer>
+      <!-- brand footer end here-->
+
+      <!-- linking scrollColor jQuery to file -->
+      <script type="text/javascript" src="../js/scrollColor.js"></script>
+    </div>
   </body>
 
 </html>

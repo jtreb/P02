@@ -86,13 +86,13 @@ header {
 
 
 /*
-  footer styling
+  footer and account styling
   */
-.footerContainer {
+.footerContainer, .subMenuContaier{
   padding: 3em 5em 1em;
 }
 
-.footerWrap {
+.footerWrap, .subMenuWrapper {
   margin: 0;
   display: flex;
   justify-content: flex-start;
@@ -100,21 +100,22 @@ header {
   flex: 1;
 }
 
-.footerColumn {
+.footerColumn, .subMenuColumn {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   margin-bottom: 20px;
 }
 
-.footerLink {
+.footerLink, .subMenuLink {
   display: block;
   align-self: flex-start;
   flex: 0 0 auto;
   padding: 10px 0;
 }
 
-.footerLink:hover, .footerLink:focus {
+.footerLink:hover, .footerLink:focus,
+.subMenuLink:hover, .subMenuLink:focus{
   opacity: 1;
 }
 
@@ -129,7 +130,67 @@ header {
   margin-top: 30px;
 }
 /*
-  footer styling end here
+  footer and account styling end here
+*/
+
+
+/*
+  account styling continue ////////////////////////
+*/
+section.contentBoxLight.firstContent {
+  padding: 0;
+}
+
+.subMenuDivid {
+  border: 1px solid #DDD;
+  width: 100%;
+}
+
+.horzDivid {
+  margin: 0 5em 0 3em;
+  border: 1px solid #DDD;
+}
+
+.smallPortion {
+  flex-grow: 0;
+}
+
+.largePortion {
+  flex-grow: 4;
+}
+
+.subMenuLink {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  align-self: center;
+  font-weight: 400;
+}
+
+.subMenuLink:hover, .subMenuLink:focus {
+  color: #225c89;
+  text-decoration: underline;
+}
+
+button.editButton {
+  position: relative;
+  left: 30em;
+}
+
+.editButton {
+  border: 2px solid #225c89;
+  max-width: 10em;
+  padding: 0.75em;
+  text-align: center;
+  background: none;
+  font-size: 1em;
+}
+
+form.accountEdit input[type=text] {
+  margin-bottom: 3em;
+}
+/*
+  account styling end here ////////////////////////
 */
 
 
