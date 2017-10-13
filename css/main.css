@@ -244,22 +244,41 @@ form[method=login] {
     /*font-family: "fredoka";*/
     /*font-size: 2em;*/
 		font-size: 1.2em;
-		margin: 0.5em 1em;
+		margin: 1em 1em;
     color: #99CCCC;
 }
 
-input[type=text],  input[type=password]{
+input[type=text],  input[type=password], input[type=search] {
   display: block;
   width: 40em;
   padding: 12px 20px;
   margin: 0.5em 0em;
   border: 1px solid #ccc;
   border-radius: 4px;
+	font-size: 1em;
 }
 
-input[type=text]:active, input[type=text]:hover, input[type=text]:focus, input[type=password]:active, input[type=password]:hover, input[type=password]:focus {
+input[type=text]:active, input[type=text]:hover, input[type=text]:focus,
+input[type=password]:active, input[type=password]:hover, input[type=password]:focus,
+input[type=search]:active, input[type=search]:hover, input[type=search]:focus {
   color: #666;
   border: 1px solid #99CCCC;
+}
+
+/*styling the radio button*/
+form[method=filter] {
+	font-size: 1.2em;
+	margin: 1em 1em;
+	color: #99CCCC;
+}
+
+input[type=radio] {
+	display: block;
+  padding: 12px 20px;
+  margin: 0.5em 0em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+	font-size: 1em;
 }
 /*end of text input field and a label styling*/
 /*
@@ -547,15 +566,20 @@ start of pop up design setup
 End of pop up design setup
 */
 
-.confirmButton {
+/*styling the new submit button (used in shop)*/
+input[type=submit] {
 	text-decoration: none;
 	text-align: center;
-	margin: 0.35em;
 	padding: 0.5em;
 	border-radius: 0.5em;
 	background-color: #49c8e5;
 	color: white;
 	transition: background-color 0.5s ease-out;
+	font-size: 1em;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+  background-color: #f79c7b;
 }
 
 /* End of the stylesheet styling*/
