@@ -250,11 +250,11 @@ form[method=login] {
     color: #99CCCC;
 }
 
-input[type=text],  input[type=password], input[type=search] {
-  display: block;
-  width: 40em;
+input[type=text], input[type=password], input[type=search]#forSearch {
+  display: inline;
+  width: 30%;
   padding: 12px 20px;
-  margin: 0.5em 0em;
+  margin: 0.5em 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
 	font-size: 1em;
@@ -270,7 +270,7 @@ input[type=search]:active, input[type=search]:hover, input[type=search]:focus {
 /*styling the radio button*/
 form[method=filter] {
 	font-size: 1.2em;
-	margin: 1em 1em;
+	margin: 1em 2em;
 	color: #99CCCC;
 }
 

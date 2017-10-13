@@ -321,7 +321,7 @@ section .fullTextBox {
   margin: 1em 0 3em;
 }
 
-input[id]{
+input[id] {
   width: 100%;
 }
 input[id=contacterMsm]{
