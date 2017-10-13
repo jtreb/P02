@@ -634,10 +634,27 @@ a.forumsButton:hover, a.forumsButton:focus {
   background-color: #f79c7b;
 }
 
+/*styling details in individual forum posts*/
 p.forumPostStyles {
 	display: inline-block;
 	margin: 0em;
 	color: #ffffff;
+}
+
+a.newPostButton {
+	text-decoration: none;
+  text-align: center;
+  margin: 2em 1.25em;
+	padding: 0.1em 2em;
+  border-radius: 0.5em;
+  background-color: #49c8e5;
+  color: white;
+	font-size: 2em;
+  transition: background-color 0.5s ease-out;
+}
+
+a.newPostButton:hover, a.newPostButton:focus {
+  background-color: #f79c7b;
 }
 
 /* End of the stylesheet styling*/
