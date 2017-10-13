@@ -29,7 +29,7 @@ header {
 }
 
 .headerBoxDark {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0);
 }
 
 .headerBoxDark a, footer a,
@@ -225,6 +225,11 @@ section.contentBoxDark {
   padding: 1em 0;
 }
 
+section .contentBox h1, section .contentBoxLight h1, section .contentBoxDark h1 {
+  margin: 0 1em 0.5em;
+  color: #99CCCC;
+}
+
 .previewBox h3 {
   margin-left: 2em;
 }
@@ -322,9 +327,72 @@ input[id]{
 input[id=contacterMsm]{
   height: 100px;
 }
+/*
+  about template end here
+*/
+
 
 
 
 /*
-  about template end here
+  login section
 */
+div.loginTitle {
+  margin-top: 0.5em;
+  font-size: 3.2em;
+  font-weight: 400;
+  text-align: center;
+  color: #DDD;
+}
+
+form.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.newUser {
+  color:#CCC;
+  margin-bottom: 3em;
+}
+
+.newUser a {
+  color: #99CCCC;
+  text-decoration: none;
+}
+
+.loginContainer {
+  display: inline-block;
+  margin-top: 0.5em;
+  width: 25%;
+}
+
+input#username, input#password {
+  height: 50px;
+  font-size: 1em;
+}
+
+.forget {
+  margin: 0;
+}
+
+.forgetPasswordLink {
+  color: #CCC;
+  text-decoration: none;
+  float: right;
+}
+
+.forgetPasswordLink:hover, .forgetPasswordLink:focus {
+  color: #99CCCC;
+}
+
+
+.loginButton {
+  margin-top: 3.5em;
+  color: #FFF;
+  border: none;
+  background: #225c89;
+  padding: 1.25em 4em;
+}
