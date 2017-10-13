@@ -241,16 +241,18 @@ cite {
 
 /*styling for text input field and a label*/
 form[method=login] {
-    font-family: "fredoka";
-    font-size: 2em;
+    /*font-family: "fredoka";*/
+    /*font-size: 2em;*/
+		font-size: 1.2em;
+		margin: 0.5em 1em;
     color: #99CCCC;
 }
 
 input[type=text],  input[type=password]{
   display: block;
-  width: 20em;
+  width: 40em;
   padding: 12px 20px;
-  margin: 0.5em 0;
+  margin: 0.5em 0em;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -341,6 +343,7 @@ ol.numberedList {
   max-width: 24%;
   padding: 1em 1em;
   margin: 0.1em;
+	margin-top: 1em;
   color: #ffffff;
   background-color: #112035;
   border-radius: 0.75em;
@@ -543,5 +546,16 @@ start of pop up design setup
 /*
 End of pop up design setup
 */
+
+.confirmButton {
+	text-decoration: none;
+	text-align: center;
+	margin: 0.35em;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	background-color: #49c8e5;
+	color: white;
+	transition: background-color 0.5s ease-out;
+}
 
 /* End of the stylesheet styling*/
