@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Login</title>
 
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/templateStyle.css" rel="stylesheet">
@@ -43,7 +43,36 @@
 
       <!-- page content section -->
       <section class="contentContainer">
-        <section class="contentBox">
+        <section class="contentBox firstContent">
+          <div class="loginTitle">Account Setup</div>
+
+          <form class="login" method="loginAccount">
+            <div class="newUser">
+              Help us to get to know you so you can connect with other users and keep track of all your purchases!
+            </div>
+
+            <div class="loginContainer">
+              <input type="text" id="firstName" placeholder="First Name">
+            </div>
+
+            <div class="loginContainer">
+              <input type="text" id="lastName" placeholder="Last Name">
+            </div>
+
+            <div class="loginContainer">
+              <input type="text" id="email" placeholder="Email">
+            </div>
+
+            <div class="loginContainer">
+              <input type="text" id="password" placeholder="Password">
+            </div>
+
+            <div class="loginContainer">
+              <input type="text" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+
+            <a href="login.html" class="button loginButton">Create Account</a>
+          </form>
 
         </section>
       </section>
