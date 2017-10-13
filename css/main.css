@@ -41,6 +41,13 @@ nav, .contentTopic {
   margin-bottom: 2em;
   border-radius: 1em;
 }
+
+.forumsSectioning {
+  background-color: #112035;
+  padding: 1em 3em;
+	margin: 0.5em 1em;
+  border-radius: 1em;
+}
 /*end of flex display of content styling*/
 
 
@@ -116,7 +123,8 @@ section h2{
 }
 
 section h3{
-  margin-bottom: 2em;
+	color: #99CCCC;
+  margin-bottom: 1em;
 }
 
 section h4 {
@@ -591,6 +599,7 @@ input[type=submit]:hover, input[type=submit]:focus {
   background-color: #f79c7b;
 }
 
+/*styling product details button*/
 a.productDetailButton {
   flex: 1;
   text-decoration: none;
@@ -606,6 +615,29 @@ a.productDetailButton {
 
 a.productDetailButton:hover, a.productDetailButton:focus {
   background-color: #f79c7b;
+}
+
+/*styling forums button*/
+a.forumsButton {
+  text-decoration: none;
+  text-align: center;
+  margin: 2em 0em;
+	padding: 0em 2em;
+  border-radius: 0.5em;
+  background-color: #49c8e5;
+  color: white;
+	font-size: 1.5em;
+  transition: background-color 0.5s ease-out;
+}
+
+a.forumsButton:hover, a.forumsButton:focus {
+  background-color: #f79c7b;
+}
+
+p.forumPostStyles {
+	display: inline-block;
+	margin: 0em;
+	color: #ffffff;
 }
 
 /* End of the stylesheet styling*/
