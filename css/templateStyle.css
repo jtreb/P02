@@ -225,6 +225,11 @@ section.contentBoxDark {
   padding: 1em 0;
 }
 
+section .contentBox h1, section .contentBoxLight h1, section .contentBoxDark h1 {
+  margin: 0 1em 0.5em;
+  color: #99CCCC;
+}
+
 .previewBox h3 {
   margin-left: 2em;
 }
