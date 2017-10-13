@@ -394,5 +394,9 @@ input#username, input#password {
   color: #FFF;
   border: none;
   background: #225c89;
-  padding: 1.25em 4em;
+  padding: 1em 3em;
+}
+
+.loginButton:hover, .loginButton:focus {
+  opacity: 0.9;
 }
