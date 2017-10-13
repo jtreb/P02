@@ -641,6 +641,7 @@ p.forumPostStyles {
 	color: #ffffff;
 }
 
+/*styling new post button*/
 a.newPostButton {
 	text-decoration: none;
   text-align: center;
@@ -655,6 +656,22 @@ a.newPostButton {
 
 a.newPostButton:hover, a.newPostButton:focus {
   background-color: #f79c7b;
+}
+
+/*styling all labels*/
+label {
+	display: block;
+}
+
+/*styling beside Forms*/
+input[type=text].besideForms {
+	display: inline-block;
+	max-width: 20%;
+	padding: 12px 20px;
+	margin: 0.5em 0em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1em;
 }
 
 /* End of the stylesheet styling*/
